@@ -22,7 +22,7 @@ public class RegisterActivity extends AppCompatActivity {
         btn_Register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ;
+
                 if(edtEmail.getText().toString().trim().isEmpty()
                         || edtPass.getText().toString().trim().isEmpty()) {
                     Toast.makeText(RegisterActivity.this, "Điền thông tin để đăng ký", Toast.LENGTH_SHORT).show();
