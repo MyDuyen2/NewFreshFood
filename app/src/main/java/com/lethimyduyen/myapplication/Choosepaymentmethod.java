@@ -39,7 +39,7 @@ public class Choosepaymentmethod extends AppCompatActivity {
         binding.imvback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Choosepaymentmethod.this, MainActivity.class);
+                Intent intent = new Intent(Choosepaymentmethod.this, Pay.class);
                 startActivity(intent);
             }
         });
@@ -47,7 +47,7 @@ public class Choosepaymentmethod extends AppCompatActivity {
             RadioGroup group = findViewById(R.id.rdgpaymentmethod);
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Choosepaymentmethod.this, MainActivity.class);
+                Intent intent = new Intent(Choosepaymentmethod.this, Pay.class);
 
                 int idChecked = group.getCheckedRadioButtonId();
                 switch(idChecked){

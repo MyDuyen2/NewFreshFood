@@ -25,7 +25,7 @@ public class Deliverymethod extends AppCompatActivity {
         binding.imvback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Deliverymethod.this, MainActivity.class);
+                Intent intent = new Intent(Deliverymethod.this, Pay.class);
                 startActivity(intent);
             }
         });

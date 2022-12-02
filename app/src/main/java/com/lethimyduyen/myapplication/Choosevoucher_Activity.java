@@ -25,7 +25,7 @@ public class Choosevoucher_Activity extends AppCompatActivity {
         binding.imvback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Choosevoucher_Activity.this, MainActivity.class);
+                Intent intent = new Intent(Choosevoucher_Activity.this, Pay.class);
                 startActivity(intent);
             }
         });
