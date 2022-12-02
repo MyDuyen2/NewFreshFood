@@ -30,15 +30,15 @@ public class LoginActivity extends AppCompatActivity {
                    Toast.makeText(LoginActivity.this, "Điền thông tin để đăng nhập", Toast.LENGTH_SHORT).show();
                    return;
                } else {
-                   Intent intent = new Intent(LoginActivity.this, IdentifyActivity.class);
+                   Intent intent = new Intent(LoginActivity.this,  MainActivity.class);
                    startActivity(intent);
                }
            }
       });
    }
-    public void login(View view) {
-        startActivity(new Intent(LoginActivity.this, MainActivity.class));
-  }
+  //  public void login(View view) {
+       // startActivity(new Intent(LoginActivity.this, MainActivity.class));
+ // }
 
     public void BackToWelcome(View view) {
         startActivity(new Intent(LoginActivity.this, FirtActivity.class));
