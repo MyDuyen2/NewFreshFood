@@ -1,31 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".YethichFragment"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".Hoantatyeuthich_Activity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
+ <LinearLayout
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="20dp">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="   3 sản phẩm"
-            android:textSize="23dp"
             android:layout_gravity="center"
+            android:layout_weight="5"
             android:background="#D3D3D3"
-            android:layout_weight="5"/>
+            android:text="   3 sản phẩm"
+            android:textSize="23dp" />
+
         <Button
-            android:id="@+id/txt_chinhsua"
             android:layout_width="wrap_content"
             android:layout_height="52dp"
-            android:text="chỉnh sửa"
+            android:text="hoàn tất"
             android:textSize="11dp"
             android:textColor="#F84242"
             android:backgroundTint="#D3D3D3"
@@ -73,25 +81,13 @@
                 android:textSize="16dp"
                 android:layout_marginTop="10dp"/>
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_gravity="center">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tương tự"
-                android:textSize="9dp"
-                android:backgroundTint="#FD0303"/>
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/ic_baseline_shopping_cart_24"
-                android:layout_marginTop="10dp"/>
-        </LinearLayout>
+        <CheckBox
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#B6ACAC"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            />
     </LinearLayout>
 
 
@@ -136,101 +132,84 @@
                 android:textSize="16dp"
                 android:layout_marginTop="10dp"/>
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:orientation="vertical"
-            android:layout_gravity="center">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#FD0303"
-                android:textSize="9dp"
-                android:text="Tương tự" />
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/ic_baseline_shopping_cart_24" />
-        </LinearLayout>
+        <CheckBox
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#B6ACAC"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="10dp"
+            />
     </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="15dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
 
-        android:layout_marginRight="10dp">
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_baseline_favorite_border_24"
-        android:layout_gravity="center"/>
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/img"
-        android:layout_marginLeft="10dp"/>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="15dp"
-        android:layout_marginLeft="20dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Đùi gà"
-            android:textSize="22dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="500gr"
-            android:textSize="15dp"
-            android:layout_marginTop="10dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="60.000đ"
-            android:textSize="16dp"
-            android:layout_marginTop="10dp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginLeft="10dp"
-        android:layout_gravity="center">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tương tự"
-            android:textSize="9dp"
-            android:backgroundTint="#FD0303"/>
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_baseline_shopping_cart_24"
-            android:layout_marginTop="10dp"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_favorite_border_24" />
 
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/img" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đùi gà"
+                android:textSize="22dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="500gr"
+                android:textSize="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="60.000đ"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <CheckBox
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#B6ACAC" />
     </LinearLayout>
-</LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Không còn sản phẩm nào hiển thị"
-        android:layout_gravity="center"
         android:gravity="center"
         android:layout_marginTop="20dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bỏ thích(0)"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#F23117"/>
+ </LinearLayout>
+</ScrollView>
 
 </LinearLayout>
-
-
