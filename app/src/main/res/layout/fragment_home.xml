@@ -3,12 +3,270 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".Home"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_place_24"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="9"
+                    android:layout_height="wrap_content"
+                    android:text="Thủ Đức, Hồ Chí Minh"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/robotoserif"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_baseline_account_circle_24"
+                    android:layout_marginEnd="10dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fresh Food"
+                android:textSize="35sp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/robotoserif"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ăn gì? - Tìm ngay"
+                android:textSize="30sp"
+                android:layout_marginStart="15dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/robotoserif"
+                android:textColor="#000000"/>
+
+            <androidx.appcompat.widget.SearchView
+                android:id = "@+id/sv_Search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/search_background"
+                app:queryHint="Bạn muốn tìm gì?"
+                app:iconifiedByDefault="false"
+                app:queryBackground="@android:color/transparent"/>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/tmv_Ad1"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/photo1"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"/>
+                    <ImageView
+                        android:id="@+id/tmv_Add2"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/photo1"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Danh mục"
+                android:textSize="20sp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/robotoserif"
+                android:textColor="#000000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/photo2_1"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/photo2_2"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/photo2_3"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/photo2_4"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thực phẩm bán chạy"
+                android:textSize="20sp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/robotoserif"
+                android:textColor="#000000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:id="@+id/imv_Product1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/thanbo"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_ProductName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thăn bò Úc tươi Trung Đồng hút chân không khay 250g"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/robotoserif"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/txt_ProductPrice1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="129.000đ"
+                        android:textSize="16sp"
+                        android:textColor="#E15004"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/robotoserif"
+                        android:layout_marginTop="10dp"/>
+
+                    <Button
+                        android:id="@+id/btn_Purchase1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chọn mua"
+                        android:backgroundTint="#42962C"
+                        android:fontFamily="@font/robotoserif"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:id="@+id/imv_Product2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/bachi"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_ProductName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ba chi heo 500g"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/robotoserif"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/txt_ProductPrice2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="99.000đ"
+                        android:textSize="16sp"
+                        android:textColor="#E15004"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/robotoserif"
+                        android:layout_marginTop="10dp"/>
+
+                    <Button
+                        android:id="@+id/btn_Purchase2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chọn mua"
+                        android:backgroundTint="#42962C"
+                        android:fontFamily="@font/robotoserif"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xem thêm"
+                android:textSize="20sp"
+                android:fontFamily="@font/robotoserif"
+                android:layout_gravity="center"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/container"
+                    android:layout_above="@+id/bottom_nav"/>
+
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bottom_nav"
+                    android:layout_alignParentBottom="true"
+                    app:menu="@menu/bottom_nav_menu"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 </FrameLayout>
