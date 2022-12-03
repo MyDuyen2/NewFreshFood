@@ -1,6 +1,7 @@
 package com.lethimyduyen.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,12 +12,17 @@ import com.lethimyduyen.myapplication.databinding.ActivityPayBinding;
 public class Pay extends AppCompatActivity {
 
     ActivityPayBinding binding;
+    RecyclerView.Adapter adapter;
+    RecyclerView recyclerViewList;
+    ManagementCart managementCart;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_pay);
         binding = ActivityPayBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+
 
         addEvents();
     }

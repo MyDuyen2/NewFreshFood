@@ -47,7 +47,7 @@
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:exported="true">
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -75,7 +75,7 @@
         </activity>
         <activity
             android:name=".Pay"
-            android:exported="true">
+            android:exported="false">
 
             <meta-data
                 android:name="android.app.lib_name"
@@ -102,6 +102,15 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity
+            android:name=".EditYeuThichActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+
     </application>
 
 </manifest>
