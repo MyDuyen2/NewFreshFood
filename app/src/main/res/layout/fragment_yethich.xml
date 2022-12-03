@@ -22,9 +22,10 @@
             android:background="#D3D3D3"
             android:layout_weight="5"/>
         <Button
-            android:id="@+id/txt_chinhsua"
+            android:id="@+id/btn_chinhsua"
             android:layout_width="wrap_content"
             android:layout_height="52dp"
+            android:onClick="Chinhsua"
             android:text="chỉnh sửa"
             android:textSize="11dp"
             android:textColor="#F84242"

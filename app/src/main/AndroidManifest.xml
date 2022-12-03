@@ -129,7 +129,30 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+            //
         </activity>
+        <activity
+            android:name=".EditYeuThichActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Sp_ThitHeo"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".thongtincanhan"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name="com.lethimyduyen.myapplication.Sp_ThitBo" />
     </application>
 
 </manifest>
