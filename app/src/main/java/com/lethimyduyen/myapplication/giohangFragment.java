@@ -1,5 +1,6 @@
 package com.lethimyduyen.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -12,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.FrameLayout;
 
 import com.lethimyduyen.adapter.SCItemAdapter;
@@ -38,6 +40,7 @@ import java.util.ArrayList;
             private ArrayList<ShoppingCartItem> shoppingList;
             private RecyclerView recyclerview;
 
+
             @Override
             public void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -47,7 +50,21 @@ import java.util.ArrayList;
             public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                      Bundle savedInstanceState) {
                 // Inflate the layout for this fragment
-                return inflater.inflate(R.layout.fragment_giohang, container, false);
+                //return inflater.inflate(R.layout.fragment_giohang, container, false);
+
+                View rootView = inflater.inflate(R.layout.fragment_giohang, container, false);
+                Button b = (Button)rootView.findViewById(R.id.btn_Buy);
+                b.setOnClickListener(new View.OnClickListener()
+                {
+                    public void onClick(View v)
+                    {
+                        Intent intent = new Intent(getActivity(), Pay.class);
+                        startActivity(intent);
+
+                    }
+
+                });
+                return rootView;
 
             }
 
@@ -56,6 +73,7 @@ import java.util.ArrayList;
                 super.onViewCreated(view, savedInstanceState);
                 loadData();
 
+
                 recyclerview = view.findViewById(R.id.rv_Product);
                 recyclerview.setLayoutManager(new LinearLayoutManager(getContext()));
                 recyclerview.setHasFixedSize(true);
@@ -63,6 +81,9 @@ import java.util.ArrayList;
                 recyclerview.setAdapter(scItemAdapter);
                 scItemAdapter.notifyDataSetChanged();
             }
+
+
+
             private void loadData(){
                 shoppingList = new ArrayList<>();
                 shoppingList.add(new ShoppingCartItem(R.drawable.cachua, R.drawable.ic_baseline_add_24, R.drawable.ic_baseline_remove_24,

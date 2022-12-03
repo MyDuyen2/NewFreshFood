@@ -11,6 +11,7 @@ public class Sp_ThitBo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sp_thitbo);
+        //
     }
     public void BackToWelcome(View view) {
         startActivity(new Intent(Sp_ThitBo.this, MainActivity.class));

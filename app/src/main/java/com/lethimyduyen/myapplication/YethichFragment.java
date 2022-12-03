@@ -19,7 +19,7 @@ import com.lethimyduyen.myapplication.databinding.FragmentYethichBinding;
 
 public class YethichFragment extends Fragment {
 
-    Button button;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -29,7 +29,7 @@ public class YethichFragment extends Fragment {
 //        return inflater.inflate(R.layout.fragment_yethich, container, false);
 
         View rootView = inflater.inflate(R.layout.fragment_yethich, container, false);
-     Button b = (Button)rootView.findViewById(R.id.btn_chinhsua);
+        Button b = (Button)rootView.findViewById(R.id.btn_chinhsua);
         b.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
@@ -44,4 +44,3 @@ public class YethichFragment extends Fragment {
     }
 
 }
-

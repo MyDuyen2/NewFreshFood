@@ -11,6 +11,7 @@ public class Sp_ThitHeo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sp_thitheo);
+        //
     }
     public void BackToWelcome(View view) {
         startActivity(new Intent(Sp_ThitHeo.this, MainActivity.class));
