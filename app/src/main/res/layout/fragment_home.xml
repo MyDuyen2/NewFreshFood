@@ -113,18 +113,22 @@
                 android:layout_marginTop="10dp">
 
                 <ImageView
+                    android:id="@+id/imv_RauCu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/photo2_1"/>
                 <ImageView
+                    android:id="@+id/imv_HaiSan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/photo2_2"/>
                 <ImageView
+                    android:id="@+id/imv_TraiCay"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/photo2_3"/>
                 <ImageView
+                    android:id="@+id/imv_ThitCa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/photo2_4"/>
