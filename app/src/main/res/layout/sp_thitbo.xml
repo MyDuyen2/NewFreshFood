@@ -32,95 +32,99 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_gravity="center_vertical"
-                android:layout_margin="340dp"
+                android:layout_margin="320dp"
                 android:src="@drawable/ic_baseline_shopping_cart_24" />
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="55dp"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="200dp"
-                android:layout_gravity="center"
-                android:layout_margin="20dp"
-                android:src="@drawable/bo" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Thăn bò Úc tươi Trung Đồng
-                 hút chân không khay 250g  "
-                android:textColor="@color/black"
-                android:textSize="24sp" />
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:text="129.000đ"
-                    android:textColor="#E15004"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:text="199.000đ"
-                    android:textSize="20dp" />
-
-            </LinearLayout>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:backgroundTint="#42962C"
-                android:text="Chọn mua"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_height="match_parent"
+                android:layout_marginTop="55dp"
+                android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/ic_baseline_arrow_right_24" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/bo" />
 
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Thăn bò Úc tươi Trung Đồng
+                 hút chân không khay 250g  "
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Thông tin sản phẩm"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:text="129.000đ"
+                        android:textColor="#E15004"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:text="199.000đ"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="#42962C"
+                    android:text="Chọn mua"
                     android:textSize="20sp"
                     android:textStyle="bold" />
-            </LinearLayout>
 
-            <TextView
-                android:layout_width="328dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="Bò Trung Đồng tự hào là cơ sở tiên phong trong lĩnh vực nhập khẩu và kinh doanh bò Úc tại Việt Nam. Với trang trại đạt chuẩn Vietgap tại huyện Đất Đỏ, tỉnh BR-VT, cùng cơ sở giết mổ tại Đồng Nai đạt tiêu chuẩn an toàn vệ sinh thực phẩm."
-                android:textSize="18dp" />
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_baseline_arrow_right_24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Thông tin sản phẩm"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="328dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Bò Trung Đồng tự hào là cơ sở tiên phong trong lĩnh vực nhập khẩu và kinh doanh bò Úc tại Việt Nam. Với trang trại đạt chuẩn Vietgap tại huyện Đất Đỏ, tỉnh BR-VT, cùng cơ sở giết mổ tại Đồng Nai đạt tiêu chuẩn an toàn vệ sinh thực phẩm."
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </ScrollView>
     </FrameLayout>
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"

@@ -39,7 +39,9 @@
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -116,11 +118,12 @@
 
             <TextView
                 android:layout_width="315dp"
-                android:layout_height="wrap_content"
+                android:layout_height="202dp"
                 android:layout_gravity="center_horizontal"
                 android:text="Ba rọi heo của thương hiệu CP đạt các tiêu chuẩn về an toàn toàn thực phẩm, đảm bảo chất lượng, độ tươi ngon. Thịt heo mềm, vân nạc, mỡ rõ ràng nên rất phù hợp làm nguyên liệu để nấu thịt kho hột vịt. Thịt heo ba rọi có thể dùng điện thoại quét mã QR trên tem sản phẩm để kiểm tra nguồn gốc."
                 android:textSize="18dp" />
         </LinearLayout>
+</ScrollView>
     </FrameLayout>
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
