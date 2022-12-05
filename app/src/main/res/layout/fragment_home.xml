@@ -135,119 +135,27 @@
 
             </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Thực phẩm bán chạy"
-                android:textSize="20sp"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/robotoserif"
-                android:textColor="#000000"/>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
-                <ImageView
-                    android:id="@+id/imv_Product1"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/thanbo"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:text="Thực phẩm bán chạy"
+                    android:textSize="20sp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/robotoserif"
+                    android:textColor="#000000"/>
+                <ListView
+                    android:id="@+id/lv_BanChay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
 
-                    <TextView
-                        android:id="@+id/txt_ProductName1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Thăn bò Úc tươi Trung Đồng hút chân không khay 250g"
-                        android:textSize="14sp"
-                        android:fontFamily="@font/robotoserif"
-                        android:textColor="#000000"/>
-
-                    <TextView
-                        android:id="@+id/txt_ProductPrice1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="129.000đ"
-                        android:textSize="16sp"
-                        android:textColor="#E15004"
-                        android:textStyle="bold"
-                        android:fontFamily="@font/robotoserif"
-                        android:layout_marginTop="10dp"/>
-
-                    <Button
-                        android:id="@+id/btn_Purchase1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Chọn mua"
-                        android:backgroundTint="#42962C"
-                        android:fontFamily="@font/robotoserif"
-                        android:textStyle="bold"
-                        android:layout_marginTop="10dp" />
-                </LinearLayout>
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
-                <ImageView
-                    android:id="@+id/imv_Product2"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/bachi"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/txt_ProductName2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Ba chi heo 500g"
-                        android:textSize="14sp"
-                        android:fontFamily="@font/robotoserif"
-                        android:textColor="#000000"/>
-
-                    <TextView
-                        android:id="@+id/txt_ProductPrice2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="99.000đ"
-                        android:textSize="16sp"
-                        android:textColor="#E15004"
-                        android:textStyle="bold"
-                        android:fontFamily="@font/robotoserif"
-                        android:layout_marginTop="10dp"/>
-
-                    <Button
-                        android:id="@+id/btn_Purchase2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Chọn mua"
-                        android:backgroundTint="#42962C"
-                        android:fontFamily="@font/robotoserif"
-                        android:textStyle="bold"
-                        android:layout_marginTop="10dp"/>
-                </LinearLayout>
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Xem thêm"
-                android:textSize="20sp"
-                android:fontFamily="@font/robotoserif"
-                android:layout_gravity="center"/>
 
             <RelativeLayout
                 android:layout_width="match_parent"
