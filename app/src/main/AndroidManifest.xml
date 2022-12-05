@@ -13,6 +13,34 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".ThitCaCategory"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TraiCayCategory"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".HaiSanCategory"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".RauCuCategory"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".FirtActivity"
             android:exported="true">
             <intent-filter>
@@ -20,6 +48,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -47,7 +76,7 @@
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:exported="false">
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -75,8 +104,7 @@
         </activity>
         <activity
             android:name=".Pay"
-            android:exported="false">
-
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -101,6 +129,7 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+            //
         </activity>
         <activity
             android:name=".EditYeuThichActivity"
@@ -109,8 +138,21 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
-
+        <activity
+            android:name=".Sp_ThitHeo"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".thongtincanhan"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name="com.lethimyduyen.myapplication.Sp_ThitBo" />
     </application>
 
 </manifest>
