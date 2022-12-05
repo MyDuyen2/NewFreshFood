@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    <ImageView
+        android:id="@+id/imv_HinhBanChay"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bachi"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/hinh_ban_chay_background"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_TenBanChay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ba chi heo 500g"
+            android:textSize="14sp"
+            android:fontFamily="@font/robotoserif"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/txt_GiaBanChay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99.000đ"
+            android:textSize="16sp"
+            android:textColor="#E15004"
+            android:textStyle="bold"
+            android:fontFamily="@font/robotoserif"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:id="@+id/imv_NutChonMua"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/btn_chon_mua"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

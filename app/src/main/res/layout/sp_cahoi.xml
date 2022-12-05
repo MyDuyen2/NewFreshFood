@@ -7,13 +7,13 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/container"
-        android:layout_above="@+id/bottom_nav">
+        android:id="@+id/container">
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/top"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
+                android:onClick="BackToWelcome"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_gravity="center_vertical"
@@ -37,7 +37,9 @@
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -118,14 +120,11 @@
                 android:layout_width="328dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/robotoserif"
                 android:text="Cá hồi được xử lý và dùng công nghệ cấp đông của nước ngoài ở nhiệt độ -40°C thật nhanh và bảo quản ở nhiệt độ -18°C. Với cách xử lý này cá vẫn giữ được độ tươi, màu sắc, chất lượng của cá và bảo quản được lâu dài."
                 android:textSize="19dp" />
         </LinearLayout>
+</ScrollView>
     </FrameLayout>
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/bottom_nav"
-        android:layout_alignParentBottom="true"
-        app:menu="@menu/bottom_nav_menu"/>
+
 </RelativeLayout>
