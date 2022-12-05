@@ -24,7 +24,6 @@ import android.widget.Toast;
 
 import com.lethimyduyen.adapter.SCItemAdapter;
 import com.lethimyduyen.model.ShoppingCartItem;
-import com.lethimyduyen.myapplication.databinding.FragmentGiohangBinding;
 
 import java.util.ArrayList;
 import java.util.List;
