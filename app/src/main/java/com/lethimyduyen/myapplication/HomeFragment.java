@@ -11,7 +11,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.SearchView;
 
 
 public class HomeFragment extends Fragment {
@@ -26,6 +28,7 @@ public class HomeFragment extends Fragment {
         ImageView imv2 = (ImageView)rootView.findViewById(R.id.imv_HaiSan);
         ImageView imv3 = (ImageView)rootView.findViewById(R.id.imv_TraiCay);
         ImageView imv4 = (ImageView)rootView.findViewById(R.id.imv_ThitCa);
+
         imv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,6 +60,8 @@ public class HomeFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+
         return rootView;
     }
 
