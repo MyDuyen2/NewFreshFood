@@ -12,9 +12,7 @@ import com.lethimyduyen.myapplication.databinding.ActivityPayBinding;
 public class Pay extends AppCompatActivity {
 
     ActivityPayBinding binding;
-    RecyclerView.Adapter adapter;
-    RecyclerView recyclerViewList;
-    ManagementCart managementCart;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
