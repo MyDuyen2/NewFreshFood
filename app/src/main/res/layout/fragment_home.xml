@@ -62,17 +62,11 @@
                 android:fontFamily="@font/robotoserif"
                 android:textColor="#000000"/>
 
-            <androidx.appcompat.widget.SearchView
-                android:id = "@+id/sv_Search"
-                android:layout_width="match_parent"
+            <ImageView
+                android:onClick="Search"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginStart="15dp"
-                android:background="@drawable/search_background"
-                app:queryHint="Bạn muốn tìm gì?"
-                app:iconifiedByDefault="false"
-                app:queryBackground="@android:color/transparent"/>
+                android:src="@drawable/find"/>
 
             <HorizontalScrollView
                 android:layout_width="wrap_content"
@@ -91,7 +85,7 @@
                         android:id="@+id/tmv_Add2"
                         android:layout_width="300dp"
                         android:layout_height="200dp"
-                        android:src="@drawable/photo1"
+                        android:src="@drawable/sale1"
                         android:layout_gravity="center"/>
                 </LinearLayout>
             </HorizontalScrollView>

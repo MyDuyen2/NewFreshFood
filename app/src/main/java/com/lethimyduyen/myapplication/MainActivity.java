@@ -54,6 +54,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    public void Search(View view) {
+        startActivity (new Intent(MainActivity.this, ProductActivity.class));
+
+    }
 
 }
 
