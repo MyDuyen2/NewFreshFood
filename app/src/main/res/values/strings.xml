@@ -2,4 +2,8 @@
     <string name="app_name">My Application</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="radio_cash">Thanh toán khi nhận hàng</string>
+    <string name="radio_bank">Ngân hàng/Thẻ tín dụng</string>
+    <string name="radio_ZaloPay">ZaloPay</string>
+    <string name="radio_Momo">Momo</string>
 </resources>
