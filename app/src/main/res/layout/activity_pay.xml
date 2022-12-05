@@ -268,7 +268,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="right"
-                        android:text="Thanh toán khi nhận hàng >"
+                        android:text="Chọn phương thức thanh toán >"
                         android:textColor="#E24F07"
                         android:textSize="18sp" />
                 </LinearLayout>

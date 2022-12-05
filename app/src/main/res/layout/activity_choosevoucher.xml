@@ -48,6 +48,7 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <LinearLayout
+        android:id="@+id/ln_voucher1"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:background="@drawable/shape"
