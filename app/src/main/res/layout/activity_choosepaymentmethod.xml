@@ -46,126 +46,146 @@
             </androidx.appcompat.widget.Toolbar>
         </LinearLayout>
     </com.google.android.material.appbar.AppBarLayout>
-    <RadioGroup
-        android:id="@+id/rdgpaymentmethod"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+
         android:layout_below="@+id/toolBartop">
-        <LinearLayout
-            android:layout_width="match_parent"
+        <RadioGroup
+            android:id="@+id/rdgpaymentmethod"
+            android:layout_weight="8"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-
-
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
-
-
-            <LinearLayout
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rdbCash"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:orientation="horizontal"
-                android:gravity="center">
-                <TextView
-                    android:layout_weight="9"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="Thanh toán khi nhận hàng"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:padding="10dp"/>
-                <RadioButton
-                    android:id="@+id/rdbCash"
-                    android:layout_weight="1"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:paddingRight="10dp"/>
-
-            </LinearLayout>
-            <LinearLayout
+                android:paddingRight="10dp"
+                android:text="@string/radio_cash"
+                android:onClick="checkButton"
+                android:checked="false"  />
+            <RadioButton
+                android:id="@+id/rdbBank"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:orientation="horizontal"
-                android:gravity="center">
+                android:paddingRight="10dp"
+                android:text="@string/radio_bank"
+                android:onClick="checkButton"
+                android:checked="false"  />
+            <RadioButton
+                android:id="@+id/rdbZalopay"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:paddingRight="10dp"
+                android:text="@string/radio_ZaloPay"
+                android:onClick="checkButton"
+                android:checked="false"  />
+            <RadioButton
+                android:id="@+id/rdbMomo"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:paddingRight="10dp"
+                android:text="@string/radio_Momo"
+                android:onClick="checkButton"
+                android:checked="false"  />
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/bank" />
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/zalopay" />
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/momo" />
 
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:gravity="center">-->
+<!--                <RadioButton-->
+<!--                    android:id="@+id/rdbBank"-->
+<!--                    android:layout_weight="8"-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:paddingRight="10dp"-->
+<!--                    android:text="@string/radio_bank"-->
+<!--                    android:onClick="checkButton"-->
+<!--                    android:checked="false"  />-->
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="80dp"
                     android:layout_weight="2"
                     android:src="@drawable/bank" />
-                <TextView
-                    android:layout_weight="7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="Ngân hàng/Thẻ tín dụng"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:padding="10dp"/>
-                <RadioButton
-                    android:id="@+id/rdbBank"
-                    android:layout_weight="1"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:paddingRight="10dp"/>
 
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:orientation="horizontal"
-                android:gravity="center">
 
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="80dp"
-                    android:layout_weight="2"
-                    android:src="@drawable/zalopay" />
-                <TextView
-                    android:layout_weight="7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="ZaloPay"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:padding="10dp"/>
 
-                <RadioButton
-                    android:id="@+id/rdbZalopay"
-                    android:layout_weight="1"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:paddingRight="10dp" />
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:gravity="center">-->
+<!--                <RadioButton-->
+<!--                    android:id="@+id/rdbZalopay"-->
+<!--                    android:layout_weight="8"-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:paddingRight="10dp"-->
+<!--                    android:text="@string/radio_ZaloPay"-->
+<!--                    android:onClick="checkButton"-->
+<!--                    android:checked="false"  />-->
+<!--                <ImageView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="80dp"-->
+<!--                    android:layout_weight="2"-->
+<!--                    android:src="@drawable/zalopay" />-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:gravity="center">-->
+<!--                <RadioButton-->
+<!--                    android:id="@+id/rdbMomo"-->
+<!--                    android:layout_weight="8"-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:paddingRight="10dp"-->
+<!--                    android:text="@string/radio_Momo"-->
+<!--                    android:onClick="checkButton"-->
+<!--                    android:checked="false"  />-->
+<!--                <ImageView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="80dp"-->
+<!--                    android:layout_weight="2"-->
+<!--                    android:src="@drawable/momo" />-->
+<!--            </LinearLayout>-->
 
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:orientation="horizontal"
-                android:gravity="center">
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="80dp"
-                    android:layout_weight="2"
-                    android:src="@drawable/momo" />
-                <TextView
-                    android:layout_weight="7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="Ví điện tử Mommo"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:padding="10dp"/>
-                <RadioButton
-                    android:id="@+id/rdbMomo"
-                    android:layout_weight="1"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:paddingRight="10dp"/>
-
-            </LinearLayout>
-        </LinearLayout>
-    </RadioGroup>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/toolBarbottom"
