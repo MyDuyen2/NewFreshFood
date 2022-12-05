@@ -8,13 +8,13 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/container"
-        android:layout_above="@+id/bottom_nav">
+        android:id="@+id/container">
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/top"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
+                android:onClick="BackToWelcome"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_gravity="center_vertical"
@@ -120,17 +120,13 @@
                 android:layout_width="315dp"
                 android:layout_height="202dp"
                 android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/robotoserif"
                 android:text="Ba rọi heo của thương hiệu CP đạt các tiêu chuẩn về an toàn toàn thực phẩm, đảm bảo chất lượng, độ tươi ngon. Thịt heo mềm, vân nạc, mỡ rõ ràng nên rất phù hợp làm nguyên liệu để nấu thịt kho hột vịt. Thịt heo ba rọi có thể dùng điện thoại quét mã QR trên tem sản phẩm để kiểm tra nguồn gốc."
                 android:textSize="18dp" />
         </LinearLayout>
 </ScrollView>
     </FrameLayout>
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/bottom_nav"
-        android:layout_alignParentBottom="true"
-        app:menu="@menu/bottom_nav_menu"/>
+
 
 
 </RelativeLayout>

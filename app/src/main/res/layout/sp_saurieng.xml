@@ -7,13 +7,13 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/container"
-        android:layout_above="@+id/bottom_nav">
+        android:id="@+id/container">
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/top"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
+                android:onClick="BackToWelcome"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_gravity="center_vertical"
@@ -36,7 +36,9 @@
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -116,14 +118,10 @@
                 android:layout_width="328dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/robotoserif"
                 android:text="Cơm sầu riêng vàng, ngọt, thơm vô cùng hấp dẫn. Cơm sầu riêng được lấy từ những trái sầu riêng chất lượng, múi to. Cơm sầu riêng có thể chế biến thành nhiều món ăn ngon như sinh tố sầu riêng, kem sầu riêng, bánh crepe,..."
                 android:textSize="19dp" />
         </LinearLayout>
+</ScrollView>
     </FrameLayout>
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/bottom_nav"
-        android:layout_alignParentBottom="true"
-        app:menu="@menu/bottom_nav_menu"/>
 </RelativeLayout>
