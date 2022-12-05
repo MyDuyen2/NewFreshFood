@@ -47,4 +47,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
+    public void forgotpass(View view) {
+        startActivity(new Intent(LoginActivity.this, Forgottenpwd.class));
+    }
 }
