@@ -64,6 +64,7 @@ public class Pay extends AppCompatActivity {
 
 //                Intent intent = new Intent(Pay.this, HomeFragment.class);
 //                startActivity(intent);
+
                 Toast.makeText(Pay.this, "Đặt hàng thành công", Toast.LENGTH_SHORT).show();
             }
         });

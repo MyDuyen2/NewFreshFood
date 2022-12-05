@@ -22,6 +22,7 @@
                 android:layout_margin="10dp"
                 android:src="@drawable/ic_baseline_arrow_back_24" />
             <TextView
+                android:fontFamily="@font/roboto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -60,6 +61,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
+                    android:fontFamily="@font/roboto"
                     android:text="Thăn bò Úc tươi Trung Đồng
                  hút chân không khay 250g  "
                     android:textColor="@color/black"
@@ -69,24 +71,26 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
                     <TextView
+                        android:fontFamily="@font/roboto"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_margin="10dp"
+                        android:layout_margin="0dp"
                         android:text="129.000đ"
                         android:textColor="#E15004"
                         android:textSize="20dp"
                         android:textStyle="bold" />
 
                     <TextView
+                        android:fontFamily="@font/roboto"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        android:text="199.000đ"
+                        android:layout_margin="0dp"
+                        android:text=" Giá gốc: 199.000đ"
                         android:textSize="20dp" />
 
                 </LinearLayout>
@@ -96,6 +100,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:backgroundTint="#42962C"
+                    android:fontFamily="@font/roboto"
                     android:text="Chọn mua"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -114,6 +119,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:fontFamily="@font/roboto"
                         android:text="Thông tin sản phẩm"
                         android:textSize="20sp"
                         android:textStyle="bold" />

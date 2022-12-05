@@ -2,7 +2,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
     <FrameLayout
         android:layout_width="match_parent"
@@ -24,6 +23,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="50dp"
+                android:fontFamily="@font/roboto"
                 android:text="Cơm sầu riêng Ri 6 Foodmap"
                 android:textColor="@color/black"
                 android:textSize="18dp" />
@@ -53,6 +53,7 @@
                 android:src="@drawable/saurieng" />
 
             <TextView
+                android:fontFamily="@font/roboto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -64,24 +65,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
                 <TextView
+                    android:fontFamily="@font/roboto"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
+                    android:layout_margin="0dp"
                     android:text="99.000đ"
                     android:textColor="#E15004"
                     android:textSize="20dp"
                     android:textStyle="bold" />
 
                 <TextView
+                    android:fontFamily="@font/roboto"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:text="199.000đ"
+                    android:layout_margin="0dp"
+                    android:text=" Giá gốc: 199.000đ"
                     android:textSize="20dp" />
 
             </LinearLayout>
@@ -91,6 +94,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:backgroundTint="#42962C"
+                android:fontFamily="@font/roboto"
                 android:text="Chọn mua"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -106,6 +110,7 @@
                     android:src="@drawable/ic_baseline_arrow_right_24" />
 
                 <TextView
+                    android:fontFamily="@font/roboto"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"

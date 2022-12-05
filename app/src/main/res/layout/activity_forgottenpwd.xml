@@ -6,30 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".Forgottenpwd"
     android:orientation="vertical"
-    android:paddingRight="20dp"
-    android:paddingLeft="20dp">
+    android:padding="20dp">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:orientation="horizontal">
 
-        <ImageButton
-            android:id="@+id/btn_Return"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_baseline_arrow_back_24"/>
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:src="@drawable/saurieng"/>
+            android:onClick="BackToWelcome"
+            android:src="@drawable/ic_twotone_arrow_back_24"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
     </LinearLayout>
     <TextView
+        android:fontFamily="@font/roboto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Quên mật khẩu?"
         android:textSize="25sp"/>
     <TextView
+        android:fontFamily="@font/roboto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Nhập email hệ thống sẽ gửi cho bạn mã để đăng nhập và đổi lại mật khẩu. "
@@ -51,12 +47,15 @@
                 android:id="@+id/edt_Email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email Address"
+                android:hint="Nhập Email"
+                android:fontFamily="@font/roboto"
                 app:hintAnimationEnabled="true"
                 app:hintTextColor="@color/btn" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
+            android:fontFamily="@font/roboto"
+            android:textStyle="bold"
             android:id="@+id/btn_Continue"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
@@ -73,11 +72,13 @@
         android:orientation="horizontal"
         android:paddingBottom="20dp">
         <TextView
+            android:fontFamily="@font/roboto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nhớ mật khẩu?" />
 
         <TextView
+            android:fontFamily="@font/roboto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"

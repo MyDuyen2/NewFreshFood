@@ -10,8 +10,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.lethimyduyen.myapplication.databinding.ActivityForgottenpwdBinding;
-
 public class Forgottenpwd extends AppCompatActivity {
    // ActivityForgottenpwdBinding binding;
     Button btnContinue;
@@ -64,5 +62,8 @@ public class Forgottenpwd extends AppCompatActivity {
     public void login(View view) {
         Intent intent = new Intent(Forgottenpwd.this, LoginActivity.class);
         startActivity(intent);
+    }
+
+    public void BackToWelcome(View view) {
     }
 }

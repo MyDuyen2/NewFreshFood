@@ -15,17 +15,19 @@
         android:layout_width="40dp"
         android:layout_height="40dp"/>
     <TextView
-        android:layout_marginTop="40dp"
+        android:fontFamily="@font/roboto"
+        android:layout_marginTop="30dp"
         android:text="Đăng nhập"
         android:textSize="32sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
     <TextView
+        android:fontFamily="@font/roboto"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="30dp"
         android:text="Chào mừng bạn đến với FreshFood!"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <ScrollView
@@ -39,20 +41,22 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="0dp"
             android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+
                 android:layout_margin="5dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/email_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Email Address"
+                    android:fontFamily="@font/roboto"
+                    android:hint="Email"
                     app:hintAnimationEnabled="true"
                     app:hintTextColor="@color/btn" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -70,12 +74,14 @@
                     android:id="@+id/password_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Password"
+                    android:hint="Mật khẩu"
+                    android:fontFamily="@font/roboto"
                     android:inputType="textPassword"
                     app:hintAnimationEnabled="true"
                     app:hintTextColor="@color/btn" />
             </com.google.android.material.textfield.TextInputLayout>
             <TextView
+                android:fontFamily="@font/roboto"
                 android:id="@+id/txt_forgottenpwd"
                 android:onClick="forgotpass"
                 android:layout_width="wrap_content"
@@ -84,10 +90,10 @@
                 android:text="Quên mật khẩu?"
                 android:textColor="#E15004"
                 android:paddingRight="5dp"/>
-        </LinearLayout>
-    </ScrollView>
+
 
     <Button
+        android:fontFamily="@font/roboto"
         android:id="@+id/btn_Login"
         android:onClick="login"
         android:text="Đăng nhập"
@@ -104,7 +110,8 @@
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
         android:text="Hoặc đăng nhập bằng"
-        android:textSize="22sp"
+        android:fontFamily="@font/roboto"
+        android:textSize="16sp"
         android:textColor="#85848A"
         android:layout_marginBottom="30dp"
         android:layout_width="wrap_content"
@@ -134,25 +141,28 @@
         <TextView
             android:layout_marginTop="30dp"
             android:layout_gravity="center"
+            android:fontFamily="@font/roboto"
             android:text="Đã có tài khoản ?"
-            android:textSize="22sp"
+            android:textSize="16sp"
             android:textColor="#85848A"
             android:layout_marginBottom="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <TextView
+            android:fontFamily="@font/roboto"
             android:onClick="txtDangKy"
             android:id="@+id/txt_Dangky"
             android:layout_marginTop="30dp"
             android:layout_gravity="center"
             android:text=" Đăng ký"
-            android:textSize="22sp"
+            android:textSize="16sp"
             android:textColor="@color/btn"
             android:layout_marginBottom="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-    </LinearLayout>
+    </LinearLayout></LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>

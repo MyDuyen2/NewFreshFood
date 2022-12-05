@@ -15,6 +15,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"/>
     <TextView
+        android:fontFamily="@font/roboto"
         android:layout_marginTop="20dp"
         android:text="Xác thực tài khoản"
         android:textSize="32sp"
@@ -22,6 +23,7 @@
         android:layout_height="wrap_content"/>
 
     <TextView
+        android:fontFamily="@font/roboto"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="30dp"
         android:text="Hệ thống sẽ gữi mã xác thực gồm 5 ký tự đến địa chỉ email của bạn. Vui lòng kiểm tra email và nhập mã "
@@ -30,6 +32,7 @@
         android:layout_height="wrap_content"/>
 
     <TextView
+        android:fontFamily="@font/roboto"
         android:layout_marginTop="40dp"
         android:text="Nhập mã xác thực: "
         android:textSize="22sp"
@@ -43,6 +46,7 @@
         android:gravity="center"
         android:orientation="horizontal">
     <EditText
+        android:fontFamily="@font/roboto"
         android:id="@+id/edt_InputCode1"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -55,6 +59,7 @@
         android:textStyle="bold"
         tools:ignore="LabelFor" />
         <EditText
+            android:fontFamily="@font/roboto"
             android:id="@+id/edt_InputCode2"
             android:layout_width="45dp"
             android:layout_height="45dp"
@@ -67,6 +72,7 @@
             android:textStyle="bold"
             tools:ignore="LabelFor" />
         <EditText
+            android:fontFamily="@font/roboto"
             android:id="@+id/edt_InputCode3"
             android:layout_width="45dp"
             android:layout_height="45dp"
@@ -79,6 +85,7 @@
             android:textStyle="bold"
             tools:ignore="LabelFor" />
         <EditText
+            android:fontFamily="@font/roboto"
             android:id="@+id/edt_InputCode4"
             android:layout_width="45dp"
             android:layout_height="45dp"
@@ -91,6 +98,7 @@
             android:textStyle="bold"
             tools:ignore="LabelFor" />
         <EditText
+            android:fontFamily="@font/roboto"
             android:id="@+id/edt_InputCode5"
             android:layout_width="45dp"
             android:layout_height="45dp"
@@ -109,6 +117,7 @@
     android:layout_gravity="center_horizontal"
     >
     <Button
+        android:fontFamily="@font/roboto"
         android:id="@+id/btn_Tieptuc"
         android:layout_gravity="center"
         android:onClick="Tieptuc"
@@ -134,6 +143,7 @@
         android:layout_gravity="center">
 
         <TextView
+            android:fontFamily="@font/roboto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -146,6 +156,7 @@
             tools:ignore="UsingOnClickInXml" />
 
         <TextView
+            android:fontFamily="@font/roboto"
             android:id="@+id/txtResend"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
