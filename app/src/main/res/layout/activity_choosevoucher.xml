@@ -120,7 +120,7 @@
         <Button
             android:fontFamily="@font/roboto"
             android:textStyle="bold"
-            android:id="@+id/btn_dathang"
+            android:id="@+id/btn_Confirm"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:backgroundTint="#E24F07"

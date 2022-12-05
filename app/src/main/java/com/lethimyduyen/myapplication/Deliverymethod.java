@@ -29,5 +29,19 @@ public class Deliverymethod extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        binding.btnConfirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Deliverymethod.this, Pay.class);
+                startActivity(intent);
+            }
+        });
+        binding.lnGhtc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Deliverymethod.this, Pay.class);
+                startActivity(intent);
+            }
+        });
     }
 }

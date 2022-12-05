@@ -51,7 +51,7 @@ public class Choosepaymentmethod extends AppCompatActivity {
     public void checkButton(View view){
         int radioId = radioGroup.getCheckedRadioButtonId();
         radioButton = findViewById(radioId);
-        Toast.makeText(Choosepaymentmethod.this, "Bạn đã chọn" + radioButton.getText(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(Choosepaymentmethod.this, "Bạn đã chọn " + radioButton.getText(), Toast.LENGTH_SHORT).show();
 
     }
 

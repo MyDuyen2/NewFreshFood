@@ -36,5 +36,12 @@ public class Choosevoucher_Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        binding.btnConfirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Choosevoucher_Activity.this, Pay.class);
+                startActivity(intent);
+            }
+        });
     }
 }
