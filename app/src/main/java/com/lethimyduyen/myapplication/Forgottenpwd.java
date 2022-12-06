@@ -13,7 +13,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Forgottenpwd extends AppCompatActivity {
    // ActivityForgottenpwdBinding binding;
     Button btnContinue;
-    ImageButton btnReturn;
     EditText edtEmail;
 
 
@@ -24,7 +23,6 @@ public class Forgottenpwd extends AppCompatActivity {
 
 
         btnContinue = findViewById(R.id.btn_Continue);
-        btnReturn = findViewById(R.id.btn_Return);
         edtEmail = findViewById(R.id.edt_Email);
 
 //        binding = ActivityForgottenpwdBinding.inflate(getLayoutInflater());
@@ -50,13 +48,7 @@ public class Forgottenpwd extends AppCompatActivity {
 
 
 
-        btnReturn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Forgottenpwd.this, LoginActivity.class);
-                startActivity(intent);
-            }
-        });
+
     }
 
     public void login(View view) {
@@ -65,5 +57,7 @@ public class Forgottenpwd extends AppCompatActivity {
     }
 
     public void BackToWelcome(View view) {
+        Intent intent = new Intent(Forgottenpwd.this, LoginActivity.class);
+        startActivity(intent);
     }
 }

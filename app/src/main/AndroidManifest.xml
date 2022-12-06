@@ -90,7 +90,7 @@
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:exported="true">
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -145,7 +145,7 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-            //
+
         </activity>
         <activity
             android:name=".EditYeuThichActivity"
@@ -163,13 +163,6 @@
         </activity>
         <activity
             android:name=".thongtincanhan"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".ShowDetailBanChay"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

@@ -83,7 +83,6 @@
             <TextView
                 android:fontFamily="@font/roboto"
                 android:id="@+id/txt_forgottenpwd"
-                android:onClick="forgotpass"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right|bottom"

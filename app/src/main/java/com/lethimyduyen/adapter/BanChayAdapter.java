@@ -1,7 +1,6 @@
 package com.lethimyduyen.adapter;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,9 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.lethimyduyen.model.BanChay;
-import com.lethimyduyen.model.HaiSan;
 import com.lethimyduyen.myapplication.R;
-import com.lethimyduyen.myapplication.ShowDetailBanChay;
 
 import java.util.List;
 
