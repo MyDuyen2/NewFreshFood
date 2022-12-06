@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -29,6 +30,7 @@ public class HomeFragment extends Fragment {
 
     BanChayAdapter adapter;
     ArrayList<BanChay> danhsachBanChay;
+    ListView listView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -76,9 +78,9 @@ public class HomeFragment extends Fragment {
         danhsachBanChay = new ArrayList<>();
         danhsachBanChay.add( new BanChay(R.drawable.bachi, R.drawable.btn_chon_mua, "Ba chỉ heo 500g", 99000));
         danhsachBanChay.add( new BanChay(R.drawable.thanbo, R.drawable.btn_chon_mua, "Thăn bò Úc tươi hút chân không 250g", 129000));
-        danhsachBanChay.add( new BanChay(R.drawable.ghe_haisan, R.drawable.btn_chon_mua, "Ghẹ xanh loại 1", 109000));
-        danhsachBanChay.add( new BanChay(R.drawable.bongcaitrang, R.drawable.btn_chon_mua, "Bông cải trắng", 30000));
-        danhsachBanChay.add( new BanChay(R.drawable.cahoi, R.drawable.btn_chon_mua, "Cá hồi đông lạnh cắt lát 300g", 99000));
+        danhsachBanChay.add( new BanChay(R.drawable.cahoi, R.drawable.btn_chon_mua, "Cá hồi đông lạnh cắtkhúc khay 300g", 99000));
+        danhsachBanChay.add( new BanChay(R.drawable.saurieng, R.drawable.btn_chon_mua, "Cơm sầu riêng Ri 6 Foodmap", 99000));
+        danhsachBanChay.add( new BanChay(R.drawable.bongcaitrang, R.drawable.btn_chon_mua, "Bông cải trắng", 99000));
         danhsachBanChay.add( new BanChay(R.drawable.taoxanh, R.drawable.btn_chon_mua, "Táo xanh nhập khẩu", 69000));
 
         adapter = new BanChayAdapter(getActivity(), R.layout.ban_chay_lst, danhsachBanChay);
@@ -86,7 +88,27 @@ public class HomeFragment extends Fragment {
         lvBanChay.setAdapter(adapter);
         Helper.getListViewSize(lvBanChay);
 
+        lvBanChay.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if(i == 0){
+                    startActivity(new Intent(getActivity(), Sp_ThitHeo.class));
+                }else if(i == 1){
+                    startActivity(new Intent(getActivity(), Sp_ThitBo.class));
 
+                }else if(i == 2) {
+                    startActivity(new Intent(getActivity(), Sp_CaHoi.class));
+                }else if(i == 3) {
+                    startActivity(new Intent(getActivity(), Sp_SauRieng.class));
+                }else if(i == 4) {
+                    startActivity(new Intent(getActivity(), BongCaiTrang.class));
+                }else if(i == 5) {
+                    startActivity(new Intent(getActivity(), SP_TaoXanh.class));
+
+                }
+
+            }
+        });
         return rootView;
     }
 

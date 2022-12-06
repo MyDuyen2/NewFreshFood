@@ -2,7 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".Sp_SauRieng">
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -32,7 +34,7 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_gravity="center_vertical"
-                android:layout_margin="340dp" android:src="@drawable/ic_baseline_shopping_cart_24" />
+                android:layout_margin="320dp" android:src="@drawable/ic_baseline_shopping_cart_24" />
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
@@ -90,6 +92,7 @@
             </LinearLayout>
 
             <Button
+                android:onClick="Chonmua"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"

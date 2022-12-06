@@ -16,4 +16,9 @@ public class Sp_ThitBo extends AppCompatActivity {
     public void BackToWelcome(View view) {
         startActivity(new Intent(Sp_ThitBo.this, MainActivity.class));
     }
+    public void Chonmua(View view) {
+        startActivity(new Intent(Sp_ThitBo.this, Pay.class));
+    }
+
 }
+

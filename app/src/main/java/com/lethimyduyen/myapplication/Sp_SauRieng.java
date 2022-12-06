@@ -6,18 +6,18 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Sp_ThitHeo extends AppCompatActivity {
+public class Sp_SauRieng extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sp_thitheo);
+        setContentView(R.layout.sp_saurieng);
         //
     }
     public void BackToWelcome(View view) {
-        startActivity(new Intent(Sp_ThitHeo.this, MainActivity.class));
+        startActivity(new Intent(Sp_SauRieng.this, MainActivity.class));
     }
     public void Chonmua(View view) {
-        startActivity(new Intent(Sp_ThitHeo.this, Pay.class));
+        startActivity(new Intent(Sp_SauRieng.this, Pay.class));
     }
 
 }
