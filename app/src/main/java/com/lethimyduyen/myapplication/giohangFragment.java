@@ -127,5 +127,8 @@ import java.util.List;
             }
 
 
+            public void BackToWelcome(View view) {
+                startActivity(new Intent(getActivity(), MainActivity.class));
+            }
         }
 

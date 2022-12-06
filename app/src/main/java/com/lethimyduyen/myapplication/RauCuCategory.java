@@ -2,7 +2,9 @@ package com.lethimyduyen.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.lethimyduyen.adapter.RauCuAdapter;
 import com.lethimyduyen.model.RauCu;
@@ -43,4 +45,7 @@ public class RauCuCategory extends AppCompatActivity {
         binding.lvRaucu.setAdapter(adapter);
     }
 
+    public void BackToWelcome(View view) {
+        startActivity(new Intent(RauCuCategory.this, MainActivity.class));
+    }
 }

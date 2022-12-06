@@ -73,7 +73,7 @@ public class Pay extends AppCompatActivity {
         binding.imvBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Pay.this, HomeFragment.class);
+                Intent intent = new Intent(Pay.this, MainActivity.class);
                 startActivity(intent);
             }
         });

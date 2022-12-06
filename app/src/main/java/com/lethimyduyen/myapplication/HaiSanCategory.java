@@ -2,7 +2,9 @@ package com.lethimyduyen.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.lethimyduyen.adapter.HaiSanAdapter;
 import com.lethimyduyen.adapter.RauCuAdapter;
@@ -44,5 +46,9 @@ public class HaiSanCategory extends AppCompatActivity {
 
         adapter = new HaiSanAdapter(HaiSanCategory.this, R.layout.hai_san_lst, danhsachHaiSan);
         binding.lvHaisan.setAdapter(adapter);
+    }
+
+    public void BackToWelcome(View view) {
+        startActivity(new Intent(HaiSanCategory.this, MainActivity.class));
     }
 }
