@@ -22,6 +22,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/imv_back"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

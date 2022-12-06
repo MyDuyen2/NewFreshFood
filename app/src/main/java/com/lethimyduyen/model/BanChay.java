@@ -3,14 +3,23 @@ package com.lethimyduyen.model;
 public class BanChay {
     int hinhBanChay, nutChonMua;
     String tenBanChay;
-    double giaBanChay;
+    double giaBanChay, giagocBanChay;
+    String motaSPBanchay;
 
     public BanChay(int hinhBanChay, int nutChonMua, String tenBanChay, double giaBanChay) {
         this.hinhBanChay = hinhBanChay;
         this.nutChonMua = nutChonMua;
         this.tenBanChay = tenBanChay;
         this.giaBanChay = giaBanChay;
+
     }
+//    public BanChay(int hinhBanChay, int nutChonMua, String tenBanChay, double giaBanChay, double giagocBanChay, String motaSPBanchay) {
+//        this.hinhBanChay = hinhBanChay;
+//        this.nutChonMua = nutChonMua;
+//        this.tenBanChay = tenBanChay;
+//        this.giaBanChay = giaBanChay;
+//        this.giagocBanChay = giagocBanChay;
+//        this.motaSPBanchay = motaSPBanchay;}
 
     public int getHinhBanChay() {
         return hinhBanChay;
@@ -43,4 +52,21 @@ public class BanChay {
     public void setGiaBanChay(double giaBanChay) {
         this.giaBanChay = giaBanChay;
     }
+//
+//    public double getGiagocBanChay() {
+//        return giagocBanChay;
+//    }
+//
+//    public void setGiagocBanChay(double giagocBanChay) {
+//        this.giagocBanChay = giagocBanChay;
+//    }
+//
+//    public String getMotaSPBanchay() {
+//        return motaSPBanchay;
+//    }
+//
+//    public void setMotaSPBanchay(String motaSPBanchay) {
+//        this.motaSPBanchay = motaSPBanchay;
+//    }
+
 }

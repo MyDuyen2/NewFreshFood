@@ -169,6 +169,13 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".ShowDetailBanChay"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".taikhoanFragment"
             android:exported="false">
             <meta-data

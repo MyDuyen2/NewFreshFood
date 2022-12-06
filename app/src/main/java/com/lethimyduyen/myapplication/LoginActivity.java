@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
@@ -13,14 +14,16 @@ import com.google.android.material.textfield.TextInputEditText;
 public class LoginActivity extends AppCompatActivity {
    Button btnLogin;
    TextInputEditText edtEmail, edtPass;
+   TextView Forgotten;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+        Forgotten=findViewById(R.id.txt_forgottenpwd);
       btnLogin = findViewById(R.id.btn_Login);
      edtEmail = findViewById(R.id.email_txt);
      edtPass =findViewById(R.id.password_txt);
+
         //click login
        btnLogin.setOnClickListener(new View.OnClickListener() {
            @Override
@@ -35,6 +38,14 @@ public class LoginActivity extends AppCompatActivity {
                }
            }
       });
+       Forgotten.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Intent intent = new Intent(LoginActivity.this,  Forgottenpwd.class);
+               startActivity(intent);
+           }
+       });
+
    }
 
 
@@ -47,7 +58,5 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
-    public void forgotpass(View view) {
-        startActivity(new Intent(LoginActivity.this, Forgottenpwd.class));
-    }
+
 }

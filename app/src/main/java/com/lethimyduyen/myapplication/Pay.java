@@ -68,5 +68,12 @@ public class Pay extends AppCompatActivity {
                 Toast.makeText(Pay.this, "Đặt hàng thành công", Toast.LENGTH_SHORT).show();
             }
         });
+        binding.imvBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Pay.this, HomeFragment.class);
+                startActivity(intent);
+            }
+        });
     }
 }

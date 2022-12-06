@@ -38,7 +38,7 @@
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-<ScrollView
+    <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent">
         <LinearLayout
@@ -130,7 +130,7 @@
                 android:text="Cá hồi được xử lý và dùng công nghệ cấp đông của nước ngoài ở nhiệt độ -40°C thật nhanh và bảo quản ở nhiệt độ -18°C. Với cách xử lý này cá vẫn giữ được độ tươi, màu sắc, chất lượng của cá và bảo quản được lâu dài."
                 android:textSize="19dp" />
         </LinearLayout>
-</ScrollView>
+    </ScrollView>
     </FrameLayout>
 
 </RelativeLayout>

@@ -1,6 +1,7 @@
 package com.lethimyduyen.adapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import com.lethimyduyen.model.BanChay;
 import com.lethimyduyen.model.HaiSan;
 import com.lethimyduyen.myapplication.R;
+import com.lethimyduyen.myapplication.ShowDetailBanChay;
 
 import java.util.List;
 
@@ -70,6 +72,7 @@ public class BanChayAdapter extends BaseAdapter {
         holder.imv_NutChonMua.setImageResource(b.getNutChonMua());
         holder.txt_TenBanChay.setText(b.getTenBanChay());
         holder.txt_GiaBanChay.setText(String.valueOf(b.getGiaBanChay()));
+
         return view;
     }
 }

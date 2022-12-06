@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -78,13 +79,26 @@ public class HomeFragment extends Fragment {
         danhsachBanChay.add( new BanChay(R.drawable.thanbo, R.drawable.btn_chon_mua, "Thăn bò Úc tươi hút chân không 250g", 129000));
         danhsachBanChay.add( new BanChay(R.drawable.ghe_haisan, R.drawable.btn_chon_mua, "Ghẹ xanh loại 1", 109000));
         danhsachBanChay.add( new BanChay(R.drawable.bongcaitrang, R.drawable.btn_chon_mua, "Bông cải trắng", 30000));
-        danhsachBanChay.add( new BanChay(R.drawable.cahoi, R.drawable.btn_chon_mua, "Cá hồi đông lạnh cắt lát 300g", 99000));
+        danhsachBanChay.add( new BanChay(R.drawable.cahoi, R.drawable.btn_chon_mua, "Cá hồi đông lạnh cắt khúc khay 300g", 99000));
         danhsachBanChay.add( new BanChay(R.drawable.taoxanh, R.drawable.btn_chon_mua, "Táo xanh nhập khẩu", 69000));
+//        danhsachBanChay.add(new BanChay(R.drawable.cahoi, R.drawable.btn_chon_mua, "Cá hồi",99000, 129000,
+//                "Cá hồi được xử lý và dùng công nghệ cấp đông của nước ngoài ở nhiệt độ -40°C thật nhanh và bảo quản ở nhiệt độ -18°C. " +
+//                        "Với cách xử lý này cá vẫn giữ được độ tươi, màu sắc, chất lượng của cá và bảo quản được lâu dài." ));
+
 
         adapter = new BanChayAdapter(getActivity(), R.layout.ban_chay_lst, danhsachBanChay);
         ListView lvBanChay = (ListView) rootView.findViewById(R.id.lv_BanChay);
         lvBanChay.setAdapter(adapter);
         Helper.getListViewSize(lvBanChay);
+//        lvBanChay.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+//                Intent intent = new Intent(getActivity(), ShowDetailBanChay.class);
+//                startActivity(intent);
+//
+//                //holder.imv_HinhBanChay.getContext().startActivities(android.content.Intent[]);
+//            }
+//        });
 
 
         return rootView;
