@@ -35,7 +35,9 @@ public class Pay extends AppCompatActivity {
 
         addEvents();
     }
-
+    public void BackToWelcome(View view) {
+        startActivity(new Intent(Pay.this, MainActivity.class));
+    }
     private void addEvents() {
         binding.txtChoosepayment.setOnClickListener(new View.OnClickListener() {
             @Override
